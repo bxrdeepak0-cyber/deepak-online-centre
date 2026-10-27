@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DEEPAK ONLINE CENTRE - ऑनलाइन फॉर्म, प्रिंट, स्कैन और डिजिटल सेवाओं में सहायता।">
+<title>DEEPAK ONLINE CENTRE</title>
+<style>
+:root{--blue:#123b78;--blue2:#1769d2;--gold:#ffca55;--ink:#17243b;--muted:#64748b;--bg:#f4f8ff;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+.wrap{width:min(1100px,92%);margin:auto}.topbar{background:#0c2852;color:#eaf2ff;font-size:14px;padding:8px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 3px 18px #122a4d12}.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--blue);font-size:19px}.logo{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;font-size:22px}.links{display:flex;gap:20px;flex-wrap:wrap}.links a{color:#31415c;text-decoration:none;font-weight:700;font-size:14px}.links a:hover{color:var(--blue2)}
+.hero{background:linear-gradient(120deg,#102f64,#1769d2);color:#fff;padding:72px 0 66px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}.tag{display:inline-block;background:#ffffff20;border:1px solid #ffffff35;padding:6px 12px;border-radius:99px;font-size:13px;font-weight:700}.hero h1{font-size:clamp(34px,5vw,56px);line-height:1.12;margin:18px 0}.hero p{font-size:18px;color:#e2edff;max-width:600px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;justify-content:center;align-items:center;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:800;border:0;cursor:pointer}.btn-gold{background:var(--gold);color:#17243b}.btn-light{border:1px solid #ffffff80;color:#fff;background:#ffffff0d}.hero-card{background:#fff;color:var(--ink);padding:26px;border-radius:22px;box-shadow:0 20px 50px #061b3b40;transform:rotate(1deg)}.hero-card .mini{font-size:13px;color:var(--muted);font-weight:700}.hero-card h3{font-size:24px;margin:8px 0 14px}.hero-list{display:grid;gap:12px}.hero-item{display:flex;gap:10px;align-items:center;background:#f1f6ff;padding:10px;border-radius:10px}.check{display:grid;place-items:center;background:#d9eaff;color:var(--blue);width:32px;height:32px;border-radius:9px;font-weight:900;flex-shrink:0}
+section{padding:64px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 32px}.eyebrow{color:var(--blue2);font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:1.5px}.section-head h2{font-size:clamp(27px,4vw,38px);margin:8px 0}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{background:#fff;border:1px solid #e3ebf7;padding:23px;border-radius:16px;box-shadow:0 8px 24px #16396a08}.service .ico{width:48px;height:48px;display:grid;place-items:center;background:#e8f1ff;border-radius:13px;font-size:23px}.service h3{margin:14px 0 6px;font-size:19px}.service p{color:var(--muted);font-size:14px;margin:0}.service-link{display:inline-flex;margin-top:14px;padding:9px 12px;border-radius:8px;background:#1769d2;color:#fff;text-decoration:none;font-size:13px;font-weight:800}.service-link:hover{background:#123b78}.service{height:100%}
+.about{background:#fff}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}.about-panel{padding:28px;border-radius:20px;background:linear-gradient(135deg,#eaf2ff,#fff);border:1px solid #dce8fa}.about-panel h3{font-size:24px;margin-top:0}.about-panel li{margin:10px 0}.notice{font-size:13px;color:var(--muted);background:#f7f9fd;padding:12px 14px;border-radius:10px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-card{background:#fff;padding:26px;border:1px solid #e1eaf7;border-radius:18px}.contact-row{display:flex;gap:12px;margin:18px 0}.contact-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#e8f1ff;font-size:20px;flex-shrink:0}.contact-row b{display:block}.contact-row span{color:var(--muted);font-size:14px}.contact-form label{display:block;font-weight:700;font-size:14px;margin:12px 0 5px}.contact-form input,.contact-form textarea{width:100%;padding:12px;border:1px solid #cfd9e8;border-radius:9px;font:inherit;background:#fff}.contact-form textarea{min-height:100px;resize:vertical}.contact-form .btn{margin-top:14px;background:#1769d2;color:#fff;width:100%}
+footer{background:#0c2852;color:#d9e6ff;padding:24px 0;text-align:center;font-size:14px}.foot-small{color:#a9c0e4;font-size:12px;margin-top:7px}
+@media(max-width:760px){.hero{padding:48px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-card{transform:none}.cards{grid-template-columns:1fr 1fr}.links{gap:10px}.links a{font-size:12px}.brand{font-size:15px}.logo{width:42px;height:42px}}
+@media(max-width:480px){.cards{grid-template-columns:1fr}.nav{align-items:flex-start}.links{max-width:140px;justify-content:flex-end}.topbar .wrap{font-size:12px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span>📍 आपका स्थानीय डिजिटल सेवा केंद्र</span><span>⏰ समय: अपने सेंटर का समय यहाँ लिखें</span></div></div>
+<header><div class="wrap nav">
+  <div class="brand"><div class="logo">D</div><span>DEEPAK<br>ONLINE CENTRE</span></div>
+  <nav class="links"><a href="#home">होम</a><a href="#services">सेवाएँ</a><a href="#vacancies">वैकेंसी फॉर्म</a><a href="#scholarships">स्कॉलरशिप फॉर्म</a><a href="#biharbhumi">बिहार भूमि</a><a href="#about">हमारे बारे में</a><a href="#contact">संपर्क</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+  <div><span class="tag">आपकी डिजिटल सेवाओं का केंद्र</span>
+    <h1>DEEPAK ONLINE<br>CENTRE</h1>
+    <p>ऑनलाइन फॉर्म, आवेदन, प्रिंट और अन्य डिजिटल सेवाओं में सहायता — सरल तरीके से, एक ही जगह।</p>
+    <div class="hero-actions"><a class="btn btn-gold" href="#services">हमारी सेवाएँ देखें</a><a class="btn btn-light" href="#contact">संपर्क करें</a></div>
+  </div>
+  <div class="hero-card"><div class="mini">हम आपकी सहायता के लिए यहाँ हैं</div><h3>हमारी मुख्य सेवाएँ</h3><div class="hero-list">
+    <div class="hero-item"><span class="check">✓</span><span>ऑनलाइन फॉर्म और आवेदन</span></div>
+    <div class="hero-item"><span class="check">✓</span><span>प्रिंटआउट और स्कैनिंग</span></div>
+    <div class="hero-item"><span class="check">✓</span><span>डिजिटल सेवाओं में सहायता</span></div>
+  </div></div>
+</div></section>
+<section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">हमारी सेवाएँ</div><h2>बिहार की ऑनलाइन एवं डिजिटल सेवाएँ</h2><p>हर सेवा के नीचे दिए गए बटन पर टैप करें। सरकारी सेवाओं के लिए संबंधित आधिकारिक पोर्टल खुलेगा; सेंटर पर उपलब्ध सेवाओं के लिए संपर्क करें। उपलब्धता और पात्रता संबंधित पोर्टल के नियमों पर निर्भर करती है।</p></div>
+<div class="cards">
+  <article class="service"><div class="ico">📝</div><h3>सरकारी नौकरी के फॉर्म</h3><p>बिहार एवं केंद्रीय भर्ती परीक्षाओं के ऑनलाइन आवेदन में सहायता।</p>
+<a class="service-link" href="https://ssc.gov.in/" target="_blank" rel="noopener noreferrer">भर्ती पोर्टल खोलें ↗</a></article>
+  <article class="service"><div class="ico">🎓</div><h3>शिक्षा एवं छात्र सेवाएँ</h3><p>स्कॉलरशिप, परीक्षा फॉर्म, एडमिशन और ऑनलाइन रजिस्ट्रेशन में सहायता।</p>
+<a class="service-link" href="https://scholarships.gov.in/Students" target="_blank" rel="noopener noreferrer">छात्रवृत्ति पोर्टल खोलें ↗</a></article>
+  <article class="service"><div class="ico">🏛️</div><h3>बिहार RTPS / लोक सेवाएँ</h3><p>जाति, आय, निवास जैसे प्रमाणपत्रों के ऑनलाइन आवेदन में सहायता, जहाँ पोर्टल पर उपलब्ध हों।</p>
+<a class="service-link" href="https://serviceonline.bihar.gov.in/" target="_blank" rel="noopener noreferrer">RTPS पोर्टल खोलें ↗</a></article>
+  <article class="service"><div class="ico">🪪</div><h3>आधार संबंधी सहायता</h3><p>आधार सेवाओं की जानकारी और अधिकृत केंद्र खोजने में मदद। आधार अपडेट केवल अधिकृत केंद्र पर।</p>
+<a class="service-link" href="https://myaadhaar.uidai.gov.in/" target="_blank" rel="noopener noreferrer">आधिकारिक आधार पोर्टल खोलें ↗</a></article>
+  <article class="service"><div class="ico">💳</div><h3>PAN कार्ड सेवाएँ</h3><p>PAN आवेदन/सुधार प्रक्रिया की जानकारी और ऑनलाइन आवेदन में सहायता।</p>
+<a class="service-link" href="https://www.incometax.gov.in/iec/foportal/" target="_blank" rel="noopener noreferrer">आयकर पोर्टल खोलें ↗</a></article>
+  <article class="service"><div class="ico">🗳️</div><h3>मतदाता सेवाएँ</h3><p>मतदाता सूची, नया पंजीकरण और विवरण सुधार के ऑनलाइन आवेदन में सहायता।</p>
+<a class="service-link" href="https://voters.eci.gov.in/" target="_blank" rel="noopener noreferrer">मतदाता पोर्टल खोलें ↗</a></article>
+  <article class="service"><div class="ico">🌾</div><h3>किसान एवं कृषि योजनाएँ</h3><p>कृषि योजनाओं के फॉर्म और आवेदन प्रक्रिया की जानकारी, पात्रता के अनुसार।</p>
+<a class="service-link" href="https://pmkisan.gov.in/" target="_blank" rel="noopener noreferrer">किसान पोर्टल खोलें ↗</a></article>
+  <article class="service"><div class="ico">👷</div><h3>श्रमिक एवं सामाजिक योजनाएँ</h3><p>संबंधित सरकारी योजनाओं के आवेदन और दस्तावेज़ प्रक्रिया में सहायता।</p>
+<a class="service-link" href="https://eshram.gov.in/" target="_blank" rel="noopener noreferrer">ई-श्रम पोर्टल खोलें ↗</a></article>
+  <article class="service"><div class="ico">🏥</div><h3>स्वास्थ्य योजना जानकारी</h3><p>उपलब्ध सरकारी स्वास्थ्य योजनाओं और आधिकारिक आवेदन प्रक्रिया की जानकारी।</p>
+<a class="service-link" href="https://beneficiary.nha.gov.in/" target="_blank" rel="noopener noreferrer">आयुष्मान पोर्टल खोलें ↗</a></article>
+  <article class="service"><div class="ico">🚆</div><h3>रेलवे एवं यात्रा जानकारी</h3><p>टिकट बुकिंग की जानकारी और अधिकृत बुकिंग माध्यमों का उपयोग।</p>
+<a class="service-link" href="https://www.irctc.co.in/" target="_blank" rel="noopener noreferrer">IRCTC पोर्टल खोलें ↗</a></article>
+  <article class="service"><div class="ico">🖨️</div><h3>प्रिंट, स्कैन एवं फोटोकॉपी</h3><p>दस्तावेज़ प्रिंटआउट, स्कैनिंग और फोटोकॉपी, यदि सेंटर पर उपलब्ध हों।</p>
+<a class="service-link" href="#contact" target="_blank" rel="noopener noreferrer">सेवा के लिए संपर्क करें ↗</a></article>
+  <article class="service"><div class="ico">📷</div><h3>फोटो एवं दस्तावेज़ तैयार करना</h3><p>ऑनलाइन आवेदन के लिए फोटो/दस्तावेज़ तैयार करने में सहायता, जहाँ सुविधा उपलब्ध हो।</p>
+<a class="service-link" href="#contact" target="_blank" rel="noopener noreferrer">सेवा के लिए संपर्क करें ↗</a></article>
+  <article class="service"><div class="ico">🏦</div><h3>बैंकिंग एवं भुगतान जानकारी</h3><p>बैंकिंग/डिजिटल भुगतान सेवाएँ केवल उचित अधिकृत व्यवस्था और पात्रता होने पर।</p>
+<a class="service-link" href="https://www.rbi.org.in/" target="_blank" rel="noopener noreferrer">आधिकारिक जानकारी देखें ↗</a></article>
+  <article class="service"><div class="ico">📱</div><h3>बिल एवं ऑनलाइन भुगतान</h3><p>बिजली, मोबाइल और अन्य बिल भुगतान की सुविधा, यदि उपलब्ध और अधिकृत हो।</p>
+<a class="service-link" href="https://www.bharatbillpay.com/" target="_blank" rel="noopener noreferrer">बिल भुगतान जानकारी देखें ↗</a></article>
+  <article class="service"><div class="ico">📄</div><h3>रजिस्ट्रेशन एवं आवेदन</h3><p>विभिन्न ऑनलाइन रजिस्ट्रेशन, फॉर्म भरने और आवेदन की स्थिति देखने में सहायता।</p>
+<a class="service-link" href="https://serviceonline.bihar.gov.in/" target="_blank" rel="noopener noreferrer">ऑनलाइन सेवा पोर्टल खोलें ↗</a></article>
+  <article class="service"><div class="ico">🧾</div><h3>अन्य डिजिटल सेवाएँ</h3><p>नई सेवाओं की उपलब्धता और शुल्क की जानकारी सेंटर से प्राप्त करें।</p>
+<a class="service-link" href="#contact" target="_blank" rel="noopener noreferrer">सेंटर से संपर्क करें ↗</a></article>
+</div></div></section>
+<section id="vacancies"><div class="wrap"><div class="section-head"><div class="eyebrow">सरकारी भर्ती</div><h2>भारत के विभिन्न विभागों के Vacancy Form</h2><p>केंद्र सरकार, रेलवे, बैंक, रक्षा, पुलिस, डाक, बिहार राज्य भर्ती और अन्य विभागों की आधिकारिक भर्ती वेबसाइटें। नई भर्ती, योग्यता, अंतिम तिथि और आवेदन लिंक संबंधित आधिकारिक वेबसाइट पर जाँचें।</p></div>
+<div class="cards">
+<article class="service"><div class="ico">🏛️</div><h3>SSC भर्ती</h3><p>केंद्र सरकार के विभिन्न मंत्रालयों/विभागों की भर्ती।</p><a class="service-link" href="https://ssc.gov.in/" target="_blank" rel="noopener noreferrer">SSC फॉर्म देखें ↗</a></article>
+<article class="service"><div class="ico">🚆</div><h3>रेलवे भर्ती (RRB)</h3><p>रेलवे की अलग-अलग भर्तियों और नोटिफिकेशन के लिए।</p><a class="service-link" href="https://www.rrbapply.gov.in/" target="_blank" rel="noopener noreferrer">RRB भर्ती देखें ↗</a></article>
+<article class="service"><div class="ico">🪖</div><h3>UPSC</h3><p>सिविल सेवा और अन्य केंद्रीय प्रतियोगी परीक्षाएँ।</p><a class="service-link" href="https://upsc.gov.in/" target="_blank" rel="noopener noreferrer">UPSC नोटिफिकेशन ↗</a></article>
+<article class="service"><div class="ico">👮</div><h3>बिहार पुलिस / CSBC</h3><p>बिहार पुलिस एवं संबंधित पदों की भर्ती सूचना।</p><a class="service-link" href="https://csbc.bihar.gov.in/" target="_blank" rel="noopener noreferrer">CSBC भर्ती देखें ↗</a></article>
+<article class="service"><div class="ico">📋</div><h3>BPSC</h3><p>बिहार लोक सेवा आयोग की परीक्षाएँ और आवेदन।</p><a class="service-link" href="https://bpsc.bihar.gov.in/" target="_blank" rel="noopener noreferrer">BPSC फॉर्म देखें ↗</a></article>
+<article class="service"><div class="ico">🏦</div><h3>बैंक भर्ती</h3><p>IBPS के माध्यम से बैंकिंग भर्ती परीक्षाओं की सूचना।</p><a class="service-link" href="https://www.ibps.in/" target="_blank" rel="noopener noreferrer">IBPS भर्ती देखें ↗</a></article>
+<article class="service"><div class="ico">🏦</div><h3>SBI भर्ती</h3><p>क्लर्क, PO और अन्य पदों के लिए आधिकारिक सूचना।</p><a class="service-link" href="https://sbi.co.in/web/careers" target="_blank" rel="noopener noreferrer">SBI Careers ↗</a></article>
+<article class="service"><div class="ico">🪖</div><h3>भारतीय सेना</h3><p>सेना भर्ती और अग्निवीर संबंधी आधिकारिक सूचनाएँ।</p><a class="service-link" href="https://joinindianarmy.nic.in/" target="_blank" rel="noopener noreferrer">Army भर्ती देखें ↗</a></article>
+<article class="service"><div class="ico">✈️</div><h3>वायु सेना</h3><p>भारतीय वायु सेना की भर्ती और पात्रता जानकारी।</p><a class="service-link" href="https://agnipathvayu.cdac.in/" target="_blank" rel="noopener noreferrer">Air Force भर्ती ↗</a></article>
+<article class="service"><div class="ico">⚓</div><h3>भारतीय नौसेना</h3><p>नौसेना की भर्ती और आवेदन सूचना।</p><a class="service-link" href="https://www.joinindiannavy.gov.in/" target="_blank" rel="noopener noreferrer">Navy भर्ती देखें ↗</a></article>
+<article class="service"><div class="ico">📮</div><h3>India Post / डाक विभाग</h3><p>डाक विभाग की भर्ती सूचना और आवेदन प्रक्रिया।</p><a class="service-link" href="https://indiapost.gov.in/" target="_blank" rel="noopener noreferrer">डाक विभाग देखें ↗</a></article>
+<article class="service"><div class="ico">🧑‍💼</div><h3>NCS रोजगार पोर्टल</h3><p>नौकरी खोजने और रोजगार सेवाओं के लिए सरकारी पोर्टल।</p><a class="service-link" href="https://www.ncs.gov.in/" target="_blank" rel="noopener noreferrer">NCS पोर्टल खोलें ↗</a></article>
+</div><p class="notice" style="margin-top:20px">ध्यान दें: यह प्रमुख आधिकारिक भर्ती पोर्टलों की सूची है, भारत के हर विभाग की हर भर्ती की पूर्ण सूची नहीं। आवेदन करने से पहले नोटिफिकेशन, आयु सीमा, योग्यता, फीस और अंतिम तिथि आधिकारिक वेबसाइट पर जाँचें। किसी अनजान वेबसाइट पर भुगतान न करें।</p></div></section>
+<section id="scholarships"><div class="wrap"><div class="section-head"><div class="eyebrow">छात्रवृत्ति एवं प्रोत्साहन योजनाएँ</div><h2>बिहार के Scholarship Form</h2><p>मैट्रिक, इंटर, पोस्ट मैट्रिक और राष्ट्रीय छात्रवृत्ति के लिए नीचे दिए गए आधिकारिक पोर्टल खोलें। आवेदन की पात्रता, चालू सत्र और अंतिम तिथि पोर्टल पर जाँचें।</p></div>
+<div class="cards">
+<article class="service"><div class="ico">🎓</div><h3>मैट्रिक छात्रवृत्ति</h3><p>10वीं पास विद्यार्थियों के लिए उपलब्ध मैट्रिक प्रोत्साहन/छात्रवृत्ति योजना की जानकारी और आवेदन।</p><a class="service-link" href="https://medhasoft.bihar.gov.in/Matric2627/" target="_blank" rel="noopener noreferrer">मैट्रिक पोर्टल खोलें ↗</a></article>
+<article class="service"><div class="ico">📘</div><h3>इंटर छात्रवृत्ति</h3><p>12वीं पास विद्यार्थियों के लिए इंटर प्रोत्साहन/मेधावृत्ति आवेदन और स्थिति।</p><a class="service-link" href="https://medhasoft.bihar.gov.in/inter2627/" target="_blank" rel="noopener noreferrer">इंटर पोर्टल खोलें ↗</a></article>
+<article class="service"><div class="ico">🧑‍🎓</div><h3>मुख्यमंत्री प्रोत्साहन योजना</h3><p>उपलब्ध वित्तीय वर्ष और योजना चुनकर आवेदन/स्थिति देखें।</p><a class="service-link" href="https://medhasoft.bihar.gov.in/All_YearApplication/" target="_blank" rel="noopener noreferrer">योजना चयन पोर्टल ↗</a></article>
+<article class="service"><div class="ico">📚</div><h3>पोस्ट मैट्रिक — BC / EBC</h3><p>पिछड़ा वर्ग और अत्यंत पिछड़ा वर्ग के पात्र विद्यार्थियों के लिए पोस्ट मैट्रिक छात्रवृत्ति।</p><a class="service-link" href="https://pmsonline.bihar.gov.in/pms/pms_online/Default.aspx" target="_blank" rel="noopener noreferrer">BC/EBC PMS पोर्टल ↗</a></article>
+<article class="service"><div class="ico">📖</div><h3>पोस्ट मैट्रिक — SC / ST</h3><p>अनुसूचित जाति और अनुसूचित जनजाति के पात्र विद्यार्थियों के लिए पोस्ट मैट्रिक छात्रवृत्ति।</p><a class="service-link" href="https://scstpmsonline.bihar.gov.in/pms/pms_online/Default.aspx" target="_blank" rel="noopener noreferrer">SC/ST PMS पोर्टल ↗</a></article>
+<article class="service"><div class="ico">🌐</div><h3>राष्ट्रीय छात्रवृत्ति पोर्टल (NSP)</h3><p>केंद्र सरकार की विभिन्न छात्रवृत्ति योजनाएँ; उपलब्ध योजनाएँ और पात्रता जाँचें।</p><a class="service-link" href="https://scholarships.gov.in/" target="_blank" rel="noopener noreferrer">NSP पोर्टल खोलें ↗</a></article>
+<article class="service"><div class="ico">🏫</div><h3>शिक्षा विभाग, बिहार</h3><p>छात्रवृत्ति और शिक्षा संबंधी सरकारी घोषणाओं के लिए आधिकारिक विभागीय वेबसाइट।</p><a class="service-link" href="https://state.bihar.gov.in/educationbihar/" target="_blank" rel="noopener noreferrer">शिक्षा विभाग देखें ↗</a></article>
+<article class="service"><div class="ico">🧾</div><h3>छात्रवृत्ति आवेदन की स्थिति</h3><p>जिस योजना में आवेदन किया है, उसी आधिकारिक पोर्टल पर लॉगिन करके स्थिति/सुधार देखें।</p><a class="service-link" href="https://medhasoft.bihar.gov.in/All_YearApplication/" target="_blank" rel="noopener noreferrer">MedhaSoft खोलें ↗</a></article>
+<article class="service"><div class="ico">🏛️</div><h3>बिहार RTPS प्रमाणपत्र</h3><p>छात्रवृत्ति में जरूरत पड़ने पर जाति, आय और निवास प्रमाणपत्र के लिए आवेदन।</p><a class="service-link" href="https://serviceonline.bihar.gov.in/" target="_blank" rel="noopener noreferrer">RTPS पोर्टल खोलें ↗</a></article>
+</div><p class="notice" style="margin-top:20px">महत्वपूर्ण: यह बिहार के प्रमुख आधिकारिक छात्रवृत्ति/प्रोत्साहन पोर्टलों की सूची है, हर छात्रवृत्ति की संपूर्ण सूची नहीं। कुछ योजनाओं के आवेदन अभी बंद हो सकते हैं या अलग सत्र के लिए हो सकते हैं। आवेदन से पहले अंतिम तिथि, पात्रता, दस्तावेज़ और दिशा-निर्देश आधिकारिक वेबसाइट पर जाँचें। किसी एजेंट को अनधिकृत भुगतान न करें।</p></div></section>
+
+<section id="biharbhumi"><div class="wrap"><div class="section-head"><div class="eyebrow">बिहार राजस्व एवं भूमि सुधार विभाग</div><h2>बिहार भूमि की प्रमुख ऑनलाइन सेवाएँ</h2><p>जमीन के रिकॉर्ड, दाखिल-खारिज, लगान, नक्शा, LPC और अन्य राजस्व सेवाओं के लिए नीचे दिए गए सरकारी पोर्टल खोलें। कुछ सेवाओं के लिए मोबाइल नंबर से लॉगिन/रजिस्ट्रेशन जरूरी हो सकता है।</p></div>
+<div class="cards">
+<article class="service"><div class="ico">📑</div><h3>ऑनलाइन दाखिल-खारिज (Mutation)</h3><p>जमीन के नामांतरण के लिए आवेदन करें।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">बिहार भूमि पोर्टल खोलें ↗</a></article>
+<article class="service"><div class="ico">🔎</div><h3>दाखिल-खारिज स्थिति / त्रुटि जाँच</h3><p>आवेदन की स्थिति और उपलब्ध त्रुटि जाँच संबंधी सेवाएँ।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">स्थिति जाँचें ↗</a></article>
+<article class="service"><div class="ico">📒</div><h3>जमाबंदी पंजी / पंजी-II</h3><p>जमाबंदी रिकॉर्ड देखें और उपलब्ध विवरण खोजें।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">जमाबंदी देखें ↗</a></article>
+<article class="service"><div class="ico">🗺️</div><h3>अपना खाता / अधिकार अभिलेख</h3><p>खाता और भूमि रिकॉर्ड से संबंधित उपलब्ध जानकारी देखें।</p><a class="service-link" href="https://land.bihar.gov.in/" target="_blank" rel="noopener noreferrer">भूमि विभाग पोर्टल ↗</a></article>
+<article class="service"><div class="ico">💰</div><h3>भू-लगान भुगतान</h3><p>भूमि लगान की ऑनलाइन भुगतान सुविधा तक पहुँचें।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">भू-लगान खोलें ↗</a></article>
+<article class="service"><div class="ico">📜</div><h3>भूमि दखल-कब्जा प्रमाणपत्र (LPC)</h3><p>LPC के लिए आवेदन और आवेदन की स्थिति देखें।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">LPC सेवा खोलें ↗</a></article>
+<article class="service"><div class="ico">🛠️</div><h3>परिमार्जन प्लस</h3><p>डिजिटाइज्ड जमाबंदी में गलत प्रविष्टियों के सुधार के लिए सेवा।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">परिमार्जन प्लस खोलें ↗</a></article>
+<article class="service"><div class="ico">🧭</div><h3>भू-मानचित्र / भू-नक्शा</h3><p>राजस्व मानचित्र देखने के लिए विभागीय पोर्टल पर जाएँ।</p><a class="service-link" href="https://land.bihar.gov.in/" target="_blank" rel="noopener noreferrer">भू-नक्शा पोर्टल ↗</a></article>
+<article class="service"><div class="ico">📚</div><h3>डिजिटल हस्ताक्षरित भू-अभिलेख</h3><p>उपलब्ध भूमि अभिलेख ऑनलाइन देखने/प्राप्त करने की सेवा।</p><a class="service-link" href="https://bhuabhilekh.bihar.gov.in/" target="_blank" rel="noopener noreferrer">भू-अभिलेख पोर्टल ↗</a></article>
+<article class="service"><div class="ico">📐</div><h3>ई-मापी (e-Mapi)</h3><p>भूमि मापी से संबंधित ऑनलाइन आवेदन/सेवा की जानकारी।</p><a class="service-link" href="https://emapi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">ई-मापी खोलें ↗</a></article>
+<article class="service"><div class="ico">⚖️</div><h3>राजस्व न्यायालय प्रबंधन प्रणाली</h3><p>राजस्व न्यायालय से जुड़े वाद, स्थिति और उपलब्ध सूची देखें।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">राजस्व न्यायालय सेवा ↗</a></article>
+<article class="service"><div class="ico">✍️</div><h3>दाखिल-खारिज वाद पर आपत्ति</h3><p>संबंधित वाद में आपत्ति दर्ज करने की उपलब्ध सुविधा।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">आपत्ति सेवा खोलें ↗</a></article>
+<article class="service"><div class="ico">📲</div><h3>जमाबंदी SMS अलर्ट</h3><p>जमाबंदी से संबंधित SMS अलर्ट की सुविधा के लिए पोर्टल देखें।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">SMS अलर्ट सेवा ↗</a></article>
+<article class="service"><div class="ico">🪪</div><h3>आधार / मोबाइल सीडिंग स्थिति</h3><p>जमाबंदी से जुड़े आधार या मोबाइल लिंक की स्थिति जाँचें।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">सीडिंग स्थिति देखें ↗</a></article>
+<article class="service"><div class="ico">🏛️</div><h3>भूमि उपयोग परिवर्तन</h3><p>भूमि के उपयोग प्रकार में परिवर्तन (भूमि-संपरिवर्तन) की सेवा।</p><a class="service-link" href="https://land.bihar.gov.in/" target="_blank" rel="noopener noreferrer">विभागीय पोर्टल खोलें ↗</a></article>
+<article class="service"><div class="ico">🚪</div><h3>राजस्व मानचित्र की डोर-स्टेप डिलीवरी</h3><p>राजस्व मानचित्र घर तक मँगाने की उपलब्ध सेवा की जानकारी।</p><a class="service-link" href="https://land.bihar.gov.in/" target="_blank" rel="noopener noreferrer">मानचित्र सेवा देखें ↗</a></article>
+<article class="service"><div class="ico">📋</div><h3>विशेष भूमि सर्वेक्षण</h3><p>विशेष सर्वेक्षण, संबंधित सूचना और ऑनलाइन सेवाओं की जानकारी।</p><a class="service-link" href="https://dlrs.bihar.gov.in/services.html" target="_blank" rel="noopener noreferrer">विशेष सर्वेक्षण सेवाएँ ↗</a></article>
+<article class="service"><div class="ico">🏢</div><h3>सरकारी भूमि दाखिल-खारिज</h3><p>सरकारी भूमि के नामांतरण से संबंधित विभागीय सेवा।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">बिहार भूमि पोर्टल ↗</a></article>
+<article class="service"><div class="ico">📨</div><h3>राजस्व महा-अभियान स्थिति</h3><p>राजस्व महा-अभियान से संबंधित आवेदन/स्थिति की जानकारी।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">आवेदन स्थिति देखें ↗</a></article>
+<article class="service"><div class="ico">📖</div><h3>कैथी दस्तावेज़ अनुवाद</h3><p>कैथी लिपि से जुड़े दस्तावेज़ और अनुवाद सेवा की जानकारी।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">कैथी सेवा देखें ↗</a></article>
+<article class="service"><div class="ico">📣</div><h3>जन शिकायत / सहायता एवं FAQ</h3><p>भूमि सेवाओं से जुड़ी शिकायत, सहायता और प्रक्रिया संबंधी जानकारी।</p><a class="service-link" href="https://biharbhumi.bihar.gov.in/" target="_blank" rel="noopener noreferrer">सहायता पोर्टल खोलें ↗</a></article>
+</div><p class="notice" style="margin-top:20px">महत्वपूर्ण: ये बिहार सरकार के बिहारभूमि/राजस्व एवं भूमि सुधार विभाग की प्रमुख सेवाओं की सूची है। कुछ सेवाओं के बटन मुख्य आधिकारिक पोर्टल पर ले जाते हैं, जहाँ संबंधित सेवा चुननी होगी। आवेदन, भुगतान या दस्तावेज़ जमा करने से पहले URL सरकारी डोमेन का है या नहीं जाँचें; नियम, शुल्क और उपलब्धता विभाग के अनुसार बदल सकते हैं।</p></div></section>
+
+<section class="about" id="about"><div class="wrap about-grid">
+  <div><div class="eyebrow">हमारे बारे में</div><h2>DEEPAK ONLINE CENTRE में आपका स्वागत है</h2><p>हमारा उद्देश्य ग्राहकों को ऑनलाइन और डिजिटल प्रक्रियाओं को समझने तथा पूरा करने में सहायता देना है। किसी भी सेवा की उपलब्धता और शुल्क की जानकारी सेंटर से प्राप्त करें।</p><p class="notice">महत्वपूर्ण: यह सेवाओं की जानकारी की सूची है, सभी सेवाएँ इस सेंटर पर उपलब्ध होने का दावा नहीं। प्रमाणपत्र, आधार, बैंकिंग, टिकटिंग और अन्य विनियमित कार्य केवल संबंधित सरकारी पोर्टल/अधिकृत एजेंसी के नियमों के अनुसार करें। सरकारी शुल्क और पात्रता की पुष्टि आधिकारिक पोर्टल से करें।</p></div>
+  <div class="about-panel"><h3>हमसे क्यों संपर्क करें?</h3><ul><li>एक ही जगह पर कई डिजिटल कामों की जानकारी</li><li>फॉर्म और दस्तावेज़ संबंधी प्रक्रिया में सहायता</li><li>सेवा और समय की जानकारी के लिए सीधा संपर्क</li></ul></div>
+</div></section>
+<section id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">संपर्क करें</div><h2>हमसे बात करें</h2><p>अपने सेंटर का सही पता और मोबाइल नंबर नीचे अपडेट करें।</p></div>
+<div class="contact-grid"><div class="contact-card"><h3>संपर्क जानकारी</h3>
+  <div class="contact-row"><div class="contact-icon">📍</div><div><b>सेंटर का पता</b><span>यहाँ अपना पूरा पता लिखें</span></div></div>
+  <div class="contact-row"><div class="contact-icon">📞</div><div><b>मोबाइल नंबर</b><span>यहाँ अपना मोबाइल नंबर लिखें</span></div></div>
+  <div class="contact-row"><div class="contact-icon">🕒</div><div><b>काम करने का समय</b><span>यहाँ खुलने और बंद होने का समय लिखें</span></div></div>
+  <a class="btn btn-gold" href="#contact-form">संदेश भेजें</a>
+</div>
+<div class="contact-card contact-form" id="contact-form"><h3>WhatsApp पर संदेश भेजें</h3><p style="color:#64748b;font-size:14px">नीचे अपना विवरण भरें। भेजने के लिए सेंटर का WhatsApp नंबर कोड में जोड़ना होगा।</p>
+  <label for="name">आपका नाम</label><input id="name" placeholder="अपना नाम लिखें">
+  <label for="message">आपको किस सेवा की जरूरत है?</label><textarea id="message" placeholder="अपना संदेश लिखें"></textarea>
+  <button class="btn" onclick="sendWhatsApp()">WhatsApp संदेश तैयार करें</button>
+  <p id="feedback" class="foot-small" style="color:#64748b">नोट: WhatsApp संदेश भेजने के लिए सेंटर का सही नंबर वेबसाइट के कोड में सेट होना चाहिए।</p>
+</div></div></div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> DEEPAK ONLINE CENTRE. सर्वाधिकार सुरक्षित।<div class="foot-small">सेवाओं की उपलब्धता, पात्रता और शुल्क संबंधित आधिकारिक पोर्टल/अधिकृत एजेंसी के नियमों पर निर्भर हैं। प्रकाशित करने से पहले संपर्क विवरण और वास्तविक सेवाएँ सही करें।</div></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+// अपना WhatsApp नंबर country code सहित बिना + या spaces के यहाँ लिखें, जैसे 919876543210
+const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+function sendWhatsApp(){
+ const name=document.getElementById('name').value.trim();
+ const message=document.getElementById('message').value.trim();
+ if(!name||!message){alert('कृपया अपना नाम और संदेश भरें।');return;}
+ if(WHATSAPP_NUMBER.includes('X')){alert('पहले वेबसाइट के HTML कोड में अपना WhatsApp नंबर डालें।');return;}
+ const text=encodeURIComponent('नमस्ते DEEPAK ONLINE CENTRE,\nमेरा नाम: '+name+'\nमेरी जरूरत: '+message);
+ window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+text,'_blank');
+}
+</script>
+</body>
+</html>
